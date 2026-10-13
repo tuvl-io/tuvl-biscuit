@@ -1,15 +1,26 @@
 [project]
-name="biscuit-python"
-description="Python bindings for the biscuit auth platform"
+name="tuvl-biscuit"
+description="Python bindings for Biscuit auth (abi3 build of eclipse-biscuit/biscuit-python, maintained for tuvl)"
 readme="README.md"
 license= { file = "LICENSE" }
 dynamic = ["version"]
+requires-python = ">=3.11"
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
 
 [project.urls]
 homepage = "https://biscuitsec.org/usage/python"
 documentation = "https://python.biscuitsec.org"
-repository = "https://github.com/biscuit-auth/biscuit-python"
-changelog = "https://github.com/biscuit-auth/biscuit-python/blob/main/CHANGELOG.md"
+repository = "https://github.com/tuvl-io/tuvl-biscuit"
+upstream = "https://github.com/eclipse-biscuit/biscuit-python"
+changelog = "https://github.com/tuvl-io/tuvl-biscuit/blob/main/CHANGELOG.md"
 
 [build-system]
 requires = ["maturin>=1.0,<2.0"]

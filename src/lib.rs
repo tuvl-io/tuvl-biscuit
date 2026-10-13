@@ -34,29 +34,29 @@ use pyo3::IntoPyObjectExt;
 
 use pyo3::create_exception;
 
-create_exception!(biscuit_auth, DataLogError, pyo3::exceptions::PyException);
+create_exception!(tuvl_biscuit, DataLogError, pyo3::exceptions::PyException);
 create_exception!(
-    biscuit_auth,
+    tuvl_biscuit,
     AuthorizationError,
     pyo3::exceptions::PyException
 );
 create_exception!(
-    biscuit_auth,
+    tuvl_biscuit,
     BiscuitBuildError,
     pyo3::exceptions::PyException
 );
 create_exception!(
-    biscuit_auth,
+    tuvl_biscuit,
     BiscuitValidationError,
     pyo3::exceptions::PyException
 );
 create_exception!(
-    biscuit_auth,
+    tuvl_biscuit,
     BiscuitSerializationError,
     pyo3::exceptions::PyException
 );
 create_exception!(
-    biscuit_auth,
+    tuvl_biscuit,
     BiscuitBlockError,
     pyo3::exceptions::PyException
 );
@@ -1718,7 +1718,7 @@ impl PyUnverifiedBiscuit {
 
 /// Main module for the biscuit_auth lib
 #[pymodule]
-pub fn biscuit_auth(py: Python, m: &Bound<PyModule>) -> PyResult<()> {
+pub fn tuvl_biscuit(py: Python, m: &Bound<PyModule>) -> PyResult<()> {
     m.add_class::<PyKeyPair>()?;
     m.add_class::<PyPublicKey>()?;
     m.add_class::<PyPrivateKey>()?;

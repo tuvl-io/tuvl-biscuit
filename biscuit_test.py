@@ -4,7 +4,7 @@ from datetime import datetime, timedelta, timezone
 
 import pytest
 
-from biscuit_auth import Algorithm, KeyPair, Authorizer, AuthorizerBuilder, Biscuit, BiscuitBuilder, BlockBuilder, Check, Fact, KeyPair, Policy, PrivateKey, PublicKey, Rule, UnverifiedBiscuit
+from tuvl_biscuit import Algorithm, KeyPair, Authorizer, AuthorizerBuilder, Biscuit, BiscuitBuilder, BlockBuilder, Check, Fact, KeyPair, Policy, PrivateKey, PublicKey, Rule, UnverifiedBiscuit
 
 def test_fact():
     fact = Fact('fact(1, true, "", "Test", hex:aabbcc, 2023-04-29T01:00:00Z)')

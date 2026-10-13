@@ -100,17 +100,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "biscuit-python"
-version = "0.4.0"
-dependencies = [
- "base64",
- "biscuit-auth",
- "chrono",
- "hex",
- "pyo3",
-]
-
-[[package]]
 name = "biscuit-quote"
 version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1045,6 +1034,17 @@ checksum = "3f252a68540fde3a3877aeea552b832b40ab9a69e318efd078774a01ddee1ccf"
 dependencies = [
  "num-conv",
  "time-core",
+]
+
+[[package]]
+name = "tuvl-biscuit"
+version = "0.4.1"
+dependencies = [
+ "base64",
+ "biscuit-auth",
+ "chrono",
+ "hex",
+ "pyo3",
 ]
 
 [[package]]

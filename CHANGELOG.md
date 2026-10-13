@@ -1,3 +1,10 @@
+# tuvl-biscuit 0.4.1
+
+- First tuvl-biscuit release: upstream `main` at a505042 (PyO3 0.28.2, Python 3.14 support) built as
+  abi3 wheels for CPython >= 3.11, including Windows arm64.
+- Distribution renamed `tuvl-biscuit`, module `tuvl_biscuit` (exceptions report `tuvl_biscuit` as
+  their module).
+
 # 0.4.0
 
 - biscuit-rust 6.0.0

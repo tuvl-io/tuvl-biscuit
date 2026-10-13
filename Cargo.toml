@@ -1,15 +1,15 @@
 [package]
-name = "biscuit-python"
-version = "0.4.0"
+name = "tuvl-biscuit"
+version = "0.4.1"
 edition = "2021"
 
 [lib]
-name = "biscuit_auth"
+name = "tuvl_biscuit"
 crate-type = ["cdylib"]
 
 [dependencies]
 biscuit-auth = { version = "6.0.0", features = ["pem"] }
-pyo3 = { version = "0.28.2", features = ["extension-module", "chrono"] }
+pyo3 = { version = "0.28.2", features = ["extension-module", "chrono", "abi3-py311"] }
 hex = "0.4"
 base64 = "0.13.0"
 chrono = "0.4"

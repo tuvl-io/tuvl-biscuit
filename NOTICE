@@ -1,0 +1,11 @@
+tuvl-biscuit
+Copyright the Eclipse Biscuit authors, and tuvl.io for the modifications.
+
+This product is a modified version of biscuit-python
+(https://github.com/eclipse-biscuit/biscuit-python), licensed under the
+Apache License, Version 2.0 (see LICENSE).
+
+Modifications by tuvl.io: the distribution and module are renamed
+(biscuit-python / biscuit_auth -> tuvl-biscuit / tuvl_biscuit), the extension
+is built against the CPython stable ABI (abi3, Python >= 3.11), and the build
+and release workflows are replaced.
